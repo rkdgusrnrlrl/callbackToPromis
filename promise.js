@@ -21,7 +21,6 @@ function query(q) {
     });
 }
 
-//내부 에러시 제대로 캐치 되지 않음
 app.get('/', (req, res) => {
     query('SELECT 1 + 1 AS solution')
         .then((results1) => {
